@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/crawl.css')}}">
+</head>
+<body>
+    <div>
+        <div class="hot_100">
+            <h1>{{chart_name}} HOT 100</h1>
+            <ol>
+                {% for song in song%}
+
+                <li>{{song}}</li>
+                {% endfor%}
+            </ol>
+
+        </div>
+        <h3><a href="/"> BACK TO MAIN</a></h3>
+    </div>
+</body>
+</html>
